@@ -59,8 +59,6 @@ def FindLink(InputData,word):
             SaveImage(link,word,count)
 
 if __name__=='__main__':
-    #输入需要加载的页数，每页35幅图像
-    #PageNum = 10
     #输入需要搜索的关键字
     word='45型驱逐舰'
     InputData=urllib.parse.quote(word)
