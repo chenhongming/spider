@@ -17,7 +17,8 @@ import socket
 import selenium.webdriver.phantomjs
 
 f=open('url.txt','w',encoding='utf-8')
-#从得到的图片链接下载图片，并保存
+
+# Download the picture from the resulting picture link and save it
 def SaveImage(link,InputData,count):
     try:
         urllib.request.urlretrieve(link,'./'+InputData+'/'+str(count)+'.jpg')
@@ -25,16 +26,17 @@ def SaveImage(link,InputData,count):
         print(urllib_err)
     except Exception as err:
         print(err)
-        print("产生未知错误，放弃保存")
+        print("Generate unknown error, give up saving")
     else:
-        print("图+1,已有" + str(count) + "张图")
-        print('正在下载第' + str(count + 1) + '张图片)
-#找到图片的链接
+        print("picture+1,having" + str(count) + "pictures")
+        print('Downloading' + str(count + 1) + 'pictures')
+
+#Find the link to the picture
 def FindLink(InputData,word):
     url = 'https://www.google.com.hk/search?q=%s&newwindow=1&safe=strict&source=lnms&tbm=isch&sa=X&ved=0ahUKEwir1MTc6fnWAhWJjJQKHXfECE4Q_AUICigB&biw=1440&bih=769' % InputData
-    driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
-    #driver=webdriver.PhantomJS()
-
+    driver = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')   # This is a necessary Google driver for Mac
+    #driver = webdriver.Chrome(executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe') # This is a necessary Google driver for Windowns
+          
     driver.get(url)
     for i in range(20):
         print(i)
@@ -59,7 +61,7 @@ def FindLink(InputData,word):
             SaveImage(link,word,count)
 
 if __name__=='__main__':
-    #输入需要搜索的关键字
-    word='45型驱逐舰'
+    #Enter keywords to search for
+    word='$#%@#^&'
     InputData=urllib.parse.quote(word)
     FindLink(InputData,word)
