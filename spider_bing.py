@@ -7,7 +7,7 @@ import os
 import urllib.request
 import urllib.parse
 from bs4 import BeautifulSoup
-#从得到的图片链接下载图片，并保存
+#Download the picture from the resulting picture link and save it
 f=open('out.txt','w',encoding='utf-8')
 def SaveImage(link,InputData,count):
     try:
@@ -18,10 +18,10 @@ def SaveImage(link,InputData,count):
     except Exception as err:
         time.sleep(1)
         print(err)
-        print("产生未知错误，放弃保存")
+        print("Generate unknown error, give up saving")
     else:
-        print("图+1,已有" + str(count) + "张图")
-#找到图片的链接
+        print("picture+1,having" + str(count) + "pictures")
+#Find the link to the picture
 def FindLink(PageNum,InputData,word):
     for i in range(PageNum):
         print(i)
@@ -45,9 +45,9 @@ def FindLink(PageNum,InputData,word):
         except:
             print('URL OPENING ERROR !')
 if __name__=='__main__':
-    #输入需要加载的页数，每页35幅图像
+    #Enter the numbers of pages to load, 35 images per page
     PageNum = 10
-    #输入需要搜索的关键字
-    word='李一桐'
+    #Enter keywords to search for
+    word='keywords'
     InputData=urllib.parse.quote(word)
     FindLink(PageNum,InputData,word)
