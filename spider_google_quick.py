@@ -61,7 +61,7 @@ def FindLink(InputData,word):
             SaveImage(link,word,count)
 
 if __name__=='__main__':
-    #Enter keywords to search for
+    #Enter keywords to search for,The keyword is Chinese
     word='$#%@#^&'
     InputData=urllib.parse.quote(word)
     FindLink(InputData,word)
