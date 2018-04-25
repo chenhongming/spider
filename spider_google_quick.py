@@ -38,7 +38,7 @@ def FindLink(InputData,word):
     #driver = webdriver.Chrome(executable_path='C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe') # This is a necessary Google driver for Windowns
           
     driver.get(url)
-    for i in range(20):
+    for i in range(5):
         print(i)
         try:
             temp = driver.find_element_by_xpath('//*[@id="smb"]')
