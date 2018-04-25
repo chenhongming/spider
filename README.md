@@ -14,8 +14,7 @@ Help:
 
 
 For  spider_baidu.py:
-	
-	If you want to crawl Baidu's picture, you only need to set the keyword and page number to crawl. You can download 30 pictures per page.
+		If you want to crawl Baidu's picture, you only need to set the keyword and page number to crawl. You can download 30 pictures per page.
 
 For  spider_bing.py
 	
