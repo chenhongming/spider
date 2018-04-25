@@ -16,8 +16,10 @@ Help:
 I.For  spider_baidu.py:
 	If you want to crawl Baidu's picture, you only need to set the keyword and page number to crawl. You can download 30 pictures per page.
 
+
 II.For  spider_bing.py
 	If you want to crawl bing's picture, you only need to set the keyword and page number to crawl. You can download 35 pictures per page.
+
 
 III.For  spider_google_quick.py
 	If you want to crawl Google's picture，you only need to set the keyword to crawl.You don't need to set the number of pictures, it will crawl all the pictures corresponding to the keyword.Of course, you can terminate it early when you think the picture is enough.
@@ -25,6 +27,7 @@ III.For  spider_google_quick.py
 	https://blog.csdn.net/huilan_same/article/details/51896672
 	Note: Mac installation path and the driver's name is different from Windows.
          
+
 IV.For  spider_google_slow.py 
 	If you want to crawl Google's picture，you only need to set the keyword and page number to crawl.In addition, it requires Google's driver, so you need to install the corresponding driver.Find the corresponding version and download it:
 	https://blog.csdn.net/huilan_same/article/details/51896672
