@@ -13,10 +13,10 @@ Help:
 4. In short, you can combine both to achieve better results.
 
 
-For  spider_baidu.py:
+# For  spider_baidu.py:
 	If you want to crawl Baidu's picture, you only need to set the keyword and page number to crawl. You can download 30 pictures per page.
 
-For  spider_bing.py
+# For  spider_bing.py
 	If you want to crawl bing's picture, you only need to set the keyword and page number to crawl. You can download 35 pictures per page.
 
 For  spider_google_quick.py
